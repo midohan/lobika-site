@@ -1,0 +1,35 @@
+/* Lobika, le site de guides : une feuille, aucune police ni ressource chargée d'ailleurs. Jetons de design_handoff_padel/README.md §1 (téléphone, clair). */
+:root { --fond: #F5F5F0; --surface: #FFFFFF; --encre: #141414; --encre2: #5A5A55; --accent: #D4F04A; --accent-texte: #4A5A00; --alerte: #8A5300; --bord: #EDEDE6; }
+* { box-sizing: border-box; }
+html { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.55; color: var(--encre); background: var(--fond); }
+body { margin: 0; }
+header, main, footer { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem; }
+header { padding-top: 1.25rem; }
+.marque { display: flex; align-items: center; gap: .6rem; font-weight: 800; font-size: 1.25rem; text-decoration: none; color: var(--encre); }
+.marque .pastille { width: 1.1rem; height: 1.1rem; border-radius: 50%; background: var(--accent); display: inline-block; }
+nav.pages { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1rem 0; }
+nav.pages a { padding: .45rem .85rem; border-radius: 999px; background: var(--surface); color: var(--encre); text-decoration: none; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+nav.pages a[aria-current="page"] { background: var(--accent); color: var(--encre); }
+nav.langues { display: flex; flex-wrap: wrap; gap: .4rem; font-size: .9rem; }
+nav.langues a { color: var(--encre2); text-decoration: none; padding: .35rem .5rem; min-height: 44px; display: inline-flex; align-items: center; }
+nav.langues a[aria-current="true"] { color: var(--encre); font-weight: 700; text-decoration: underline; }
+h1 { font-size: 2rem; font-weight: 800; margin: 1.25rem 0 .5rem; line-height: 1.15; }
+h2 { font-size: 1.35rem; font-weight: 800; margin: 2rem 0 .5rem; }
+h3 { font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 .4rem; }
+p, li { font-size: 1.05rem; }
+a { color: var(--accent-texte); }
+table { border-collapse: collapse; width: 100%; margin: .75rem 0 1rem; background: var(--surface); border-radius: 12px; overflow: hidden; font-size: .95rem; }
+th, td { text-align: start; padding: .55rem .7rem; border-bottom: 1px solid var(--bord); vertical-align: top; }
+th { background: var(--bord); font-weight: 700; }
+.note { background: var(--surface); border-inline-start: 4px solid var(--accent); padding: .75rem 1rem; border-radius: 12px; margin: 1rem 0; }
+.etiquette { display: inline-block; font-size: .8rem; font-weight: 700; padding: .1rem .5rem; border-radius: 999px; margin-inline-end: .5rem; vertical-align: middle; }
+.etiquette.regle { background: var(--accent); color: var(--encre); }
+.etiquette.deduit { background: var(--bord); color: var(--encre); }
+.etiquette.produit { background: #FFF1D6; color: var(--alerte); }
+.a-remplir { background: #FFF1D6; color: var(--alerte); padding: .1rem .4rem; border-radius: 6px; font-weight: 700; }
+footer { color: var(--encre2); font-size: .9rem; padding: 2rem 1.25rem 3rem; border-top: 1px solid var(--bord); margin-top: 3rem; }
+@media (prefers-color-scheme: dark) {
+  :root { --fond: #000000; --surface: #1C1C1E; --encre: #FFFFFF; --encre2: #AEAEB2; --accent-texte: #D4F04A; --bord: #2C2C2E; --alerte: #FFB340; }
+  .etiquette.produit, .a-remplir { background: #3A2A00; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
