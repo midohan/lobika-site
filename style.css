@@ -27,6 +27,11 @@ th { background: var(--bord); font-weight: 700; }
 .etiquette.deduit { background: var(--bord); color: var(--encre); }
 .etiquette.produit { background: #FFF1D6; color: var(--alerte); }
 .a-remplir { background: #FFF1D6; color: var(--alerte); padding: .1rem .4rem; border-radius: 6px; font-weight: 700; }
+.telecharger { max-width: 44rem; margin: 2.5rem auto 0; padding: 0 1.25rem; }
+.telecharger h2 { margin-top: 0; }
+.telecharger ul { list-style: none; padding: 0; margin: .5rem 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.telecharger a { padding: .45rem .95rem; border-radius: 999px; background: var(--accent); color: #141414; text-decoration: none; font-weight: 700; min-height: 44px; display: inline-flex; align-items: center; }
+.telecharger p { color: var(--encre2); font-size: .95rem; }
 footer { color: var(--encre2); font-size: .9rem; padding: 2rem 1.25rem 3rem; border-top: 1px solid var(--bord); margin-top: 3rem; }
 @media (prefers-color-scheme: dark) {
   :root { --fond: #000000; --surface: #1C1C1E; --encre: #FFFFFF; --encre2: #AEAEB2; --accent-texte: #D4F04A; --bord: #2C2C2E; --alerte: #FFB340; }

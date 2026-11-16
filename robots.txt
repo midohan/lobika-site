@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://midohan.github.io/lobika-site/sitemap.xml
